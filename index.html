@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChambersXR - XR Training, Visualization, and Marketing</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .navbar {
+            background-color: #000;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+
+        /* Hero Section with Background Image */
+        .hero {
+            position: relative;
+            background: url('pictures/imgmain.jpg') no-repeat center center;
+            background-size: cover;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        /* Semi-transparent dark overlay */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        /* Title Styling */
+        h1 {
+            font-size: 4vw;  /* Title is now half of the previous size */
+            font-weight: 700;
+            color: #fff;
+            margin: 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            line-height: 1.1;
+        }
+
+        /* Tagline Styling */
+        .tagline {
+            font-size: 1.2vw;  /* Smaller tagline size */
+            color: #fff;
+            margin-top: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            display: block;
+        }
+
+        /* Red section heading */
+        h2.section-heading {
+            color: #dc3545;
+        }
+        
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .contact-section {
+            background-color: #f1f1f1;
+            padding: 60px 0;
+        }
+
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Media queries for small devices */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 6vw; /* Adjust title size for small devices */
+            }
+
+            .tagline {
+                font-size: 2vw; /* Adjust tagline size for small devices */
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 8vw; /* Larger title for very small devices */
+            }
+
+            .tagline {
+                font-size: 3vw; /* Adjust tagline size for very small devices */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ChambersXR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#industries">Benefits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#policy">Policy</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>ChambersXR</h1>
+            <p class="tagline">Exploring new horizons in education, development, and design</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2 class="section-heading">About</h2>
+            <p>ChambersXR delivers cutting-edge Extended Reality (XR) solutions. </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="pictures/img1.jpg" alt="About ChambersXR" class="img-fluid">
+                </div>
+            </div>    
+            <div class="row">  
+                <div class="col-md-6">
+                    <p ></p>
+                    <h3>Our Clients</h3>
+                    <p>From training simulations to marketing tools and prototype visualization, we provide immersive experiences designed to enhance efficiency and optimize processes in the fields of medical, manufacturing, aerospace, education, and more.  Our goal is to revolutionize how industries approach problem-solving by incorporating virtual reality (VR), augmented reality (AR), and XR technologies. We help our clients stay ahead of the curve by providing innovative tools for training, prototyping, and product visualization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-heading">Our Services</h2>
+            <p>ChambersXR offers comprehensive services in the following areas:</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>XR Training</h3>
+                    <p>Immersive training environments tailored to your industry's specific needs, reducing errors and improving outcomes.</p>
+                    <img src="pictures/img3.jpg" alt="XR Training" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h3>Education</h3>
+                    <p>Transform traditional classrooms and learning experiences by integrating XR technologies for hands-on learning and engagement.</p>
+                    <img src="pictures/img2.jpg" alt="XR Education" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h3>Prototyping</h3>
+                    <p>Rapidly visualize and iterate product designs before committing to physical production, reducing time and costs.</p>
+                    <img src="pictures/img4.jpg" alt="XR Prototyping" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h3>Marketing Tools</h3>
+                    <p>Create immersive marketing experiences that allow customers to interact with your products and brand in new and innovative ways.</p>
+                    <img src="pictures/imgbody.jpg" alt="XR Marketing Tools" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Benefits Section -->
+    <section id="industries" class="section bg-light">
+        <div class="container">
+            <h2 class="section-heading">How XR Benefits Industries</h2>
+            <p>Extended Reality (XR) technologies provide transformative solutions for a wide range of industries. By incorporating XR, businesses can enhance efficiency, training, and visualization. Here are some examples of industries that benefit from XR:</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Medical</h3>
+                    <p>XR in the medical field is used for surgical training, patient care simulations, and prototyping medical devices, improving accuracy and outcomes.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Aerospace</h3>
+                    <p>From design to maintenance, XR helps aerospace professionals visualize complex systems, streamline manufacturing, and improve safety training.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Primary & Secondary Education</h3>
+                    <p>XR makes learning more engaging and interactive, allowing students to experience complex concepts firsthand in science, history, and more.</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <h3>Skilled Trades</h3>
+                    <p>In industries such as plumbing, electrical, and carpentry, XR offers hands-on training without the need for physical materials, improving workforce readiness.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Automotive</h3>
+                    <p>XR in automotive development enables rapid prototyping, enhanced driver training, and even virtual vehicle showcases for customers.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Military</h3>
+                    <p>XR is used for mission planning, combat training, and equipment visualization, providing safer and more effective training environments.</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <h3>Manufacturing</h3>
+                    <p>Manufacturers benefit from XR by optimizing factory layouts, training workers, and visualizing prototypes before production, saving time and costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-heading">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>ChambersXR</h3>
+                    <p>Email: <a href="mailto:admin@chambersxr.com">admin@chambersxr.com</a></p>
+                    <p>Hours of Service: 9 AM - 6 PM, Monday to Friday</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Our Location</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.927676654492!2d-83.04428352453647!3d39.984569771420334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f7fd2bcedef%3A0x908798a657ba6f83!2s1395%20Grandview%20Ave%2C%20Columbus%2C%20OH%2043212%2C%20USA!5e0!3m2!1sen!2sus!4v1693828664167!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Policy -->
+    <section id="policy" class="section policy-section">
+        <div class="container">
+            <h2 class="section-heading">Policy</h2>
+            <p><strong>Privacy Policy for Applications Developed for Meta Platforms (Quest, VR, XR, AR)</strong></p>
+            <p><strong>Introduction:</strong> This Privacy Policy outlines how ChambersXR collects, uses, and protects your personal information...</p>
+            <p><strong>Information We Collect:</strong> Account details, device usage, and feedback shared with us...</p>
+            <p><strong>Usage:</strong> We use collected information to improve services...</p>
+            <p><strong>Data Security:</strong> Security measures ensure data safety.</p>
+            <p><strong>Updated:</strong> January 10, 2025.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ChambersXR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
